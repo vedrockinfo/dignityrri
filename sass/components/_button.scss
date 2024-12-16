@@ -1,0 +1,7 @@
+.global-btn-one{
+    @include GlobalButtonOne();
+}
+.global-btn-two{
+    @include GlobalButtonTwo();
+}
+

@@ -1,0 +1,297 @@
+/*================================ 
+    #RESPONSIVE CSS 
+====================================*/
+
+/* Tablet Layout: 768px.*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  /* Breadcrumb */
+  .breadcrumb-area {
+    padding: 170px 0 100px;
+  }
+
+  .banner-area.transparent-nav .content {
+    padding-top: 60px;
+  }
+
+  .banner-area.triangle-shadow::before {
+    border-top: 50px solid transparent;
+  }
+
+  /* About */
+  .about-area .services-info {
+    margin-top: 0;
+  }
+
+  /* Video Area */
+  .video-area.padding-xl {
+    padding-bottom: 110px;
+    padding-top: 80px;
+  }
+
+  /* Team */
+  .team-area .team-carousel .owl-dots {
+    margin-top: 20px !important;
+  }
+
+  /* Skill */
+  .skill-area .thumb, .skill-area .info {
+    display: block;
+  }
+
+  .skill-area .thumb {
+    min-height: 300px;
+  }
+
+  .skill-area .info {
+    padding: 80px 50px;
+  }
+
+  /* Blog */
+  .blog-area .blog-items .item .col-md-6 {
+    display: block;
+  }
+
+  .blog-area .blog-items .item .col-md-6.thumb {
+    min-height: 300px;
+  }
+
+  .blog-area.single .blog-items .item .contact-comments .col-md-6 {
+    float: inherit;
+  }
+
+  /* Contact */
+  .contact-form-area .address-info {
+    margin-top: 30px;
+    padding-left: 15px;
+  }
+
+  /* Portfolio */
+  .portfolio-area .portfolio-items .pf-item,
+  .portfolio-area .portfolio-items.col-3 .pf-item {
+    width: 50%;
+  }
+
+  .portfolio-area .portfolio-items .pf-item {
+    width: 50%;
+  }
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+  /* Heading */
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .default-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .padding-xl {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .default-padding.bottom-less {
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  .default-padding-bottom {
+    padding-bottom: 50px;
+  }
+
+  .default-padding-top {
+    padding-top: 50px;
+  }
+
+  .default-padding.bottom-30 {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .default-padding.bottom-20 {
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  .site-heading {
+    margin-bottom: 30px;
+  }
+
+  .carousel-shadow .site-heading {
+    margin-bottom: 15px;
+  }
+
+  /* Services Carousel */
+  .our-services .services-items .owl-dots {
+    margin-top: 20px !important;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-area {
+    padding: 170px 0 110px;
+  }
+  .breadcrumb-area h1 {
+    font-size: 36px;
+  }
+
+  .breadcrumb-area .col-md-6 {
+    text-align: center;
+  }
+
+  .breadcrumb-area .col-md-6 .breadcrumb {
+    margin-top: 20px;
+  }
+
+  /* Banner Area */
+  .banner-area.transparent-nav .content {
+    padding-top: 60px;
+  }
+
+  .banner-area.middle-text .content h1,
+  .banner-area.small-text .content h1 {
+    font-size: 36px;
+  }
+
+  .banner-area.triangle-shadow::before {
+    border-top: 30px solid transparent;
+  }
+
+  /* About */
+  .about-area .services-info {
+    margin-top: 0;
+  }
+
+  /* Video Area */
+  .video-area.padding-xl {
+    padding-bottom: 110px;
+    padding-top: 80px;
+  }
+
+  /* Team */
+  .team-area .team-carousel .owl-dots {
+    margin-top: 20px !important;
+  }
+
+  /* Skill */
+  .skill-area .thumb, .skill-area .info {
+    display: block;
+  }
+
+  .skill-area .thumb {
+    min-height: 300px;
+  }
+
+  .skill-area .info {
+    padding: 50px 15px;
+  }
+
+  /* Testimonials */
+  .testimonials-area .thumb, 
+  .testimonials-area .info {
+    display: block;
+  }
+
+  .testimonials-area .thumb {
+    margin-bottom: 30px;
+  }
+
+  /* Blog */
+  .blog-area .blog-items .item .col-md-6 {
+    display: block;
+  }
+
+  .blog-area .blog-items .item .col-md-6.thumb {
+    min-height: 300px;
+  }
+
+  .author-bio .avatar {
+    border-radius: 50%;
+    display: block;
+    margin: auto auto 30px;
+    vertical-align: top;
+    width: 100px;
+  }
+
+  .author-bio .content {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  .author-bio .content h4 {
+    padding-left: 0;
+  }
+
+  .comments-list .commen-item.reply {
+    padding-left: 0;
+  }
+
+  .blog-area.single .blog-items .item .contact-comments .col-md-6 {
+    float: inherit;
+  }
+
+  /* Contact */
+  .contact-form-area .address-info {
+    margin-top: 30px;
+    padding-left: 15px;
+  }
+
+  /* Portfolio */
+  .portfolio-area .portfolio-items .pf-item,
+  .portfolio-area .portfolio-items.col-3 .pf-item {
+    width: 100%;
+  }
+
+  .portfolio-area .mix-item-menu button {
+    margin: 8px 5px;
+    float: none;
+  }
+
+  .portfolio-area .mix-item-menu {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .portfolio-area.default-padding {
+    padding-bottom: 35px;
+  }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .portfolio-area .portfolio-items .pf-item,
+     .portfolio-area .portfolio-items.col-3 .pf-item {
+    width: 50%;
+  }
+}

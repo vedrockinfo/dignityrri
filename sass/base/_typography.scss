@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading-hero-primary {
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 700;
+  color: $colorWhite;
+  text-align: center;
+  line-height: 1.26;
+  text-shadow: 3px 3px 20px #00000066, -2px 1px 30px #00000066;
+
+  @include respond(maxWidth992) {
+    font-size: 48px;
+  }
+
+  @include respond(maxWidth768) {
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth575) {
+    font-size: 30px;
+  }
+}
+
+.heading-hero-secondary {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 200;
+  color: $colorWhite;
+  text-align: center;
+  line-height: 1.26;
+  display: block;
+
+  @include respond(maxWidth992) {
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth768) {
+    font-size: 30px;
+  }
+
+  @include respond(maxWidth575) {
+    font-size: 24px;
+  }
+}
+
+.heading-primary {
+  line-height: 1.25em;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: $colorWhite;
+  @include respond(maxWidth992) {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  @include respond(maxWidth768) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  @include respond(maxWidth575) {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+.heading-secondary {
+  line-height: 1.25em;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: $colorWhite;
+}
+
+.heading-tertiary {
+  line-height: 1.25em;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: $colorWhite;
+}
+
+.heading-four {
+  line-height: 1.25em;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid $colorWhite;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: $colorWhite;
+  text-transform: uppercase;
+}
+
+.heading-five {
+  line-height: 1.25em;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid $colorWhite;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: $colorWhite;
+  text-transform: uppercase;
+}
+
+.conten-para p,
+.content-para li {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include respond(maxWidth992) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  @include respond(maxWidth768) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
