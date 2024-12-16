@@ -1,122 +1,217 @@
-.top-footer-section {
-    .footer-grid {
+.hero-section {
+    .hero-grid {
         display: grid;
-        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
 
-        @include respond (minWidth992) {
-            grid-template-columns: repeat(9, 1fr);
+        @include respond (maxWidth575){
+            display: block;
         }
 
-        @include respond (maxWidth992) {
-            grid-template-columns: repeat(6, 1fr);
-        }
-
-        @include respond (maxWidth340) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .footer-grid-item {
+        .hero-grid-item {
             overflow: hidden;
 
-            img {
-                mix-blend-mode: luminosity;
-                transition: 0.4s ease;
-                width: 100%;
-                height: auto;
+            &.rp4 {
+                grid-column: span 3;
             }
 
-            &:hover {
-                img {
-                    mix-blend-mode: normal;
-                    transform: scale(1.1);
-                }
-            }
+            .img-wrapper {
+                overflow: hidden;
 
-            &.g5 {
-                grid-column-end: 5;
-                grid-column-start: 2;
-                grid-row-start: 2;
-                grid-row-end: 4;
-                display: grid;
+                figure {
+                    position: relative;
+                    height: 250px;
+                    overflow: hidden;
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
 
-                @include respond (maxWidth575) {
-                    grid-column-end: 6;
-                    grid-column-start: 2;
-                    grid-row-start: 3;
-                    grid-row-end: 6;
-                }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: $transition;
+                        object-fit: cover;
+                    }
 
-                .footer-content-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-
-                    @include respond (maxWidth340) {
-                        padding: 25px 0;
+                    figcaption {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px;
+                        background: var(--rpclr);
+                        font-weight: 700;
+                        color: #000;
                     }
                 }
             }
 
-            .footer-content-wrapper {
-                background: $colorPrimary;
-                color: $colorWhite;
+            .content-wrapper {
+                text-align: center;
+                padding: 10px;
 
-                h1 {
-                    margin-bottom: 15px;
-                    padding-bottom: 20px;
-                    color: $colorWhite;
-                    font-weight: 700;
-                    font-family: "Antonio", sans-serif;
-                    border-bottom: 1px solid $colorWhite;
-
-                    @include respond (minWidth1200) {
-                        font-size: 40px;
-                    }
-
-                    @include respond (minWidth992) {
-                        font-size: 36px;
-                    }
-
-                    @include respond (minWidth768) {
+                h2 {
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 60px;
+                    @include respond (maxWidth575){
                         font-size: 30px;
                     }
+                }
 
-                    @include respond (maxWidth768) {
+                h3 {
+                    margin: 0;
+                    color: $colorGray;
+                    font-weight: 800;
+                    font-size: 50px;
+                    font-family: $primaryHeading;
+                    @include respond (maxWidth575){
                         font-size: 24px;
                     }
                 }
+            }
+        }
+    }
+
+    .fln-booster {
+        h3 {
+            color: $colorGray;
+            font-weight: 800;
+            font-size: 50px;
+            font-family: $primaryHeading;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .booster-wrapper {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px;
+            @include respond (maxWidth768){
+                flex-direction: column;
+            }
+
+            .b-head {
+                &:nth-child(1) {
+                    background: $colorSecondary;
+                }
+
+                &:nth-child(2) {
+                    background: $colorPrimary;
+                }
+
+                &:nth-child(3) {
+                    background: $colorTertiary;
+                }
 
                 h2 {
-                    font-size: 32px;
-                    color: $colorWhite;
-                    font-family: "Antonio", sans-serif;
-                    margin-bottom: 15px;
-
-                    @include respond (maxWidth575) {
-                        font-size: 28px;
-                    }
-                }
-
-                p {
-                    font-size: 18px;
-                    color: $colorWhite;
+                    margin: 0;
+                    text-transform: uppercase;
                     font-weight: 600;
-                    margin-top: 20px;
-
-                    @include respond (maxWidth575) {
-                        font-size: 20px;
+                    color: $colorWhite;
+                    @include respond (minWidth992){
+                        font-size: 40px;
+                        padding: 15px 22.1px;
                     }
-
-                    a {
-                        color: $colorWhite;
-                        border: 1px solid $colorWhite;
-                        padding: 6px 15px;
-                        border-radius: 40px;
+                    @include respond (minWidth1200){
+                        font-size: 50px;
+                        padding: 15px 51.1px;
                     }
+                    @include respond (maxWidth575){
+                        font-size: 30px;
+                    }
+                    
                 }
             }
+        }
+    }
+}
+
+.einstine-area {
+    .col-md-6:first-child {
+        @include respond (minWidth768) {
+            border-right: 1px solid #ccc;
+        }
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .icon {
+            max-width: 100px;
+            flex: 0 0 100px;
+
+            img {
+                height: 7.6rem;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        .content-para {
+            max-width: calc(100% - 100px);
+            flex: 0 0 calc(100% - 100px);
+            padding-left: 0rem;
+        }
+    }
+
+    .rapid-wrapper {
+
+        .img-wrapper {
+            img {
+                height: 20rem;
+                margin: 0 auto 20px;
+                display: block;
+            }
+        }
+
+        .content-para {
+            p {
+                margin-bottom: 0;
+            }
+
+            em {
+                font-family: $primaryHeading;
+                font-size: 2rem;
+                font-weight: 700;
+                display: block;
+            }
+        }
+    }
+
+    
+}
+.wh-alfa {
+    blockquote.blockquote {
+        font-size: 2.4rem;
+        font-weight: 600;
+        position: relative;
+        background: rgba($colorGray, $alpha: 0.1);
+        border-left: 5px solid rgba($colorGray, $alpha: 1);
+        font-family: $primaryHeading;
+        @include respond (maxWidth768){
+            padding: 20px;
+        }
+        img{
+            mix-blend-mode: darken;
+        }
+        @include respond (minWidth768){
+            padding: 30px 30rem 30px 30px;
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30rem;
+        }
         }
     }
 }
