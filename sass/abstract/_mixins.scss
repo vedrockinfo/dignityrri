@@ -11,12 +11,14 @@
     padding: 10px 24px;
     line-height: 1;
     text-transform: capitalize;
-    border: 1.9px solid $colorWhite;
+    border: 1.9px solid $colorPrimary;
+    background: $colorPrimary;
     color: $colorWhite;
     transition: $transition;
+    display: inline-block;
     &:hover{
         color: $colorPrimary;
-        background: $colorWhite!important;
+        background: transparent!important;
     }
 }
 @mixin GlobalButtonTwo{
@@ -24,13 +26,13 @@
     padding: 10px 24px;
     line-height: 1;
     text-transform: capitalize;
-    border: 1.9px solid $colorWhite!important;
-    background: $colorWhite;
-    color: $colorWhite;
+    border: 1.9px solid $colorPrimary;
+    background: transparent;
+    color: $colorPrimary;
     transition: $transition;
     display: inline-block;
     &:hover{
         color: $colorWhite;
-        background: transparent;
+        background: $colorPrimary;
     }
 }

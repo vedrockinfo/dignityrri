@@ -70,21 +70,18 @@
                     font-weight: 700;
                     font-family: "Antonio", sans-serif;
                     border-bottom: 1px solid $colorWhite;
-
-                    @include respond (minWidth1200) {
-                        font-size: 40px;
+                    text-transform: uppercase;
+                    @include respond (maxWidth768) {
+                        font-size: 24px;
                     }
-
-                    @include respond (minWidth992) {
-                        font-size: 36px;
-                    }
-
                     @include respond (minWidth768) {
                         font-size: 30px;
                     }
-
-                    @include respond (maxWidth768) {
-                        font-size: 24px;
+                    @include respond (minWidth992) {
+                        font-size: 36px;
+                    }
+                    @include respond (minWidth1200) {
+                        font-size: 40px;
                     }
                 }
 
@@ -93,6 +90,7 @@
                     color: $colorWhite;
                     font-family: "Antonio", sans-serif;
                     margin-bottom: 15px;
+                    font-weight: 100;
 
                     @include respond (maxWidth575) {
                         font-size: 28px;
@@ -117,6 +115,48 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.call-to-action{
+    .row{
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 1.5rem;
+        .col-md-8{
+            background: $colorPrimary;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            border-radius: 1.5rem 0 0 1.5rem;
+            p{
+                color: $colorWhite;
+                font-size: 36px;
+                font-family: $primaryHeading;
+                padding: 0 12rem 0 2rem;
+                @include respond (maxWidth768){
+                    padding: 2rem;
+                }
+                line-height: 1;
+            }
+        }
+        .col-md-4{
+            text-align: center;
+            @include respond (maxWidth768){
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+.bottom-footer{
+    padding: 3rem 0;
+    .info {
+        text-align: center;
+        a{
+            color: $colorBg;
+        }
+        i{
+            font-size: 3.4rem;
         }
     }
 }

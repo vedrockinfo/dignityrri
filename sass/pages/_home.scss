@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        @include respond (maxWidth575){
+        @include respond (maxWidth575) {
             display: block;
         }
 
@@ -21,8 +21,9 @@
                     position: relative;
                     height: 250px;
                     overflow: hidden;
-                    &:hover{
-                        img{
+
+                    &:hover {
+                        img {
                             transform: scale(1.1);
                         }
                     }
@@ -57,7 +58,8 @@
                     text-transform: uppercase;
                     font-weight: 800;
                     font-size: 60px;
-                    @include respond (maxWidth575){
+
+                    @include respond (maxWidth575) {
                         font-size: 30px;
                     }
                 }
@@ -68,7 +70,8 @@
                     font-weight: 800;
                     font-size: 50px;
                     font-family: $primaryHeading;
-                    @include respond (maxWidth575){
+
+                    @include respond (maxWidth575) {
                         font-size: 24px;
                     }
                 }
@@ -92,7 +95,8 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 4px;
-            @include respond (maxWidth768){
+
+            @include respond (maxWidth768) {
                 flex-direction: column;
             }
 
@@ -114,18 +118,21 @@
                     text-transform: uppercase;
                     font-weight: 600;
                     color: $colorWhite;
-                    @include respond (minWidth992){
+
+                    @include respond (minWidth992) {
                         font-size: 40px;
                         padding: 15px 22.1px;
                     }
-                    @include respond (minWidth1200){
+
+                    @include respond (minWidth1200) {
                         font-size: 50px;
                         padding: 15px 51.1px;
                     }
-                    @include respond (maxWidth575){
+
+                    @include respond (maxWidth575) {
                         font-size: 30px;
                     }
-                    
+
                 }
             }
         }
@@ -188,8 +195,9 @@
         }
     }
 
-    
+
 }
+
 .wh-alfa {
     blockquote.blockquote {
         font-size: 2.4rem;
@@ -198,20 +206,382 @@
         background: rgba($colorGray, $alpha: 0.1);
         border-left: 5px solid rgba($colorGray, $alpha: 1);
         font-family: $primaryHeading;
-        @include respond (maxWidth768){
+
+        @include respond (maxWidth768) {
             padding: 20px;
         }
-        img{
+
+        img {
             mix-blend-mode: darken;
         }
-        @include respond (minWidth768){
+
+        @include respond (minWidth768) {
             padding: 30px 30rem 30px 30px;
-        img{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 30rem;
+
+            img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 30rem;
+            }
         }
+    }
+}
+
+.diff-alfa {
+    ul {
+        li {
+            padding: 10px;
+
+            &:first-child {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .link-wrapper {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid $colorPrimary;
+        border-radius: 5px;
+
+        &>div {
+            padding: 20px;
+            transition: $transition;
+
+            &:hover {
+                background: rgba($colorGray, $alpha: 0.1);
+            }
+        }
+
+        .left-link {
+            border-right: 1px solid $colorPrimary;
+        }
+    }
+}
+
+.rapid-embed {
+    ul.nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        background: rgba($colorGray, $alpha: 0.1);
+        position: relative;
+        padding: 2rem;
+
+        &.active {
+            background-color: $colorPrimary;
+            position: relative;
+
+            &::before {
+                content: "";
+                background: $colorPrimary;
+                position: absolute;
+                bottom: -1.5rem;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg) scale(0.5);
+                width: 3rem;
+                height: 3rem;
+            }
+
+            img {
+                filter: invert(1) brightness(10);
+            }
+
+            h4 {
+                color: $colorWhite;
+            }
+
+            .sticky {
+                background: $colorWhite;
+                color: $colorPrimary;
+            }
+        }
+
+        .sticky {
+            @include respond (minWidth768) {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            background: $colorTertiary;
+            color: $colorWhite;
+            padding: 5px 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            @include respond (maxWidth768) {
+                margin-bottom: 1.5rem;
+                padding: 5px 9px;
+            }
+        }
+
+        .img-wrapper {
+            text-align: center;
+            padding-bottom: 1rem;
+
+            img {
+                height: 5rem;
+            }
+        }
+
+        h4 {
+            color: $colorTertiary;
+            text-align: center;
+        }
+    }
+
+    blockquote {
+        text-align: center;
+        background: $colorPrimary;
+        color: $colorWhite;
+
+        @include respond (minWidth1200) {
+            width: max-content;
+        }
+
+        margin: 0 auto 4rem;
+        padding: 1rem 4rem;
+        border-radius: 0.3rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .selection-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 4rem;
+
+        @include respond (maxWidth768) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .selection-grid-item {
+            position: relative;
+            transition: $transition;
+
+            &:hover {
+                background: var(--dclr);
+
+                .icon {
+                    span {
+                        background: $colorWhite !important;
+
+                        img {
+                            filter: none !important;
+                        }
+                    }
+                }
+
+                .descrption {
+
+                    h4,
+                    p {
+                        color: $colorWhite !important;
+                    }
+                }
+            }
+
+            span.series {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 6rem;
+                font-weight: bolder;
+                line-height: 0.9;
+                color: rgba($colorGray, $alpha: 0.1);
+                transform: scale(0.86);
+                mix-blend-mode: plus-lighter;
+                pointer-events: none;
+
+            }
+
+            padding: 1rem;
+
+            @include respond (maxWidth768) {
+                &:not(:last-child) {
+                    border-bottom: 1px dotted rgba($colorGray, $alpha: 0.4);
+                }
+            }
+
+            @include respond (minWidth768) {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    border-right: 1px dotted rgba($colorGray, $alpha: 0.4);
+                }
+
+                &:nth-child(-n+3) {
+                    border-bottom: 1px dotted rgba($colorGray, $alpha: 0.4);
+                }
+            }
+
+            .selection-wrapper {
+                display: grid;
+                grid-template-columns: 80px calc(100% - 80px);
+
+                @include respond (maxWidth575) {
+                    grid-template-columns: auto;
+                    text-align: center;
+                }
+
+                .icon {
+                    margin-right: 10px;
+
+                    @include respond (maxWidth575) {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+
+                    span {
+                        background: var(--dclr);
+                        border-radius: 50%;
+                        display: inline-block;
+                        transition: $transition;
+                        width: 7rem;
+                        height: 7rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                            padding: 1.5rem;
+                            filter: grayscale(100%) brightness(1000%);
+                        }
+                    }
+                }
+
+                .descrption {
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: var(--dclr);
+                        transition: $transition;
+                    }
+
+                    p {
+
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.case-studies {
+    .studies-wrapper {
+        position: relative;
+        background: rgba($colorGray, $alpha: 0.05);
+        padding: 20px 40px;
+
+        .flag,
+        .symbol {
+            position: absolute;
+            top: 0;
+            width: 5rem;
+            height: auto;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .flag {
+            left: 0;
+        }
+
+        .symbol {
+            right: 0;
+        }
+
+        .graph {
+            margin-bottom: 5rem;
+            margin: auto;
+            padding: 2rem 2.5rem;
+
+            img {
+                object-fit: contain;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        .studies-content {
+            p {}
+        }
+    }
+}
+
+.learn-more {
+    .blog-items {
+        .equal-height {
+            margin-bottom: 3rem;
+            .item{
+                @include respond (maxWidth768){
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .thumb {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: table-cell;
+            float: none;
+            padding: 0;
+            vertical-align: middle;
+            position: relative;
+            @include respond (maxWidth768){
+                background-image: none!important;
+            }
+            img{
+                @include respond (minWidth768){
+                    display: none;
+                }
+                @include respond (maxWidth768){
+                    width: 15rem;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+        .info {
+            display: table-cell;
+            float: none;
+            vertical-align: middle;
+            background: #ffffff none repeat scroll 0 0;
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.06);
+            padding: 30px;
+            height: 300px;
+
+            h4 {
+                font-weight: 600;
+                line-height: 1.4;
+                text-transform: uppercase;
+
+                a {
+                    color: $colorPrimary;
+                }
+            }
+
+            &>a {
+                color: $colorPrimary;
+                display: inline-block;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
         }
     }
 }
