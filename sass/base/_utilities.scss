@@ -49,16 +49,16 @@
 .space-one {
   height: 40px;
 
-  @include respond (phone-before) {
-    height: 30px;
+  @include respond (maxWidth768) {
+    height: 20px;
   }
 }
 
 .space-two {
   height: 50px;
 
-  @include respond (phone-before) {
-    height: 30px;
+  @include respond (maxWidth768) {
+    height: 20px;
   }
 }
 

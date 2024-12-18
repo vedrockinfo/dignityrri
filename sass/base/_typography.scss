@@ -81,17 +81,14 @@ h6 {
   }
 
   @include respond(maxWidth992) {
-    margin-bottom: 40px;
     font-size: 36px;
   }
 
   @include respond(maxWidth768) {
-    margin-bottom: 30px;
     font-size: 30px;
   }
 
   @include respond(maxWidth575) {
-    margin-bottom: 30px;
     font-size: 24px;
   }
 

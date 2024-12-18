@@ -87,6 +87,17 @@
             font-family: $primaryHeading;
             text-align: center;
             margin-top: 10px;
+            @include respond (maxWidth992){
+                font-size: 36px;
+            }
+            @include respond (maxWidth768){
+                font-size: 30px;
+            }
+            @include respond (maxWidth575){
+                font-size: 24px;
+            }
+            
+            
         }
 
         .booster-wrapper {
@@ -130,7 +141,7 @@
                     }
 
                     @include respond (maxWidth575) {
-                        font-size: 30px;
+                        font-size: 24px;
                     }
 
                 }
@@ -243,8 +254,8 @@
     .link-wrapper {
         margin-top: 4rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        border: 1px solid $colorPrimary;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid $colorGray;
         border-radius: 5px;
 
         &>div {
@@ -256,9 +267,6 @@
             }
         }
 
-        .left-link {
-            border-right: 1px solid $colorPrimary;
-        }
     }
 }
 
