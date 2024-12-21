@@ -238,7 +238,9 @@
               <div class="link-wrapper">
                 <div class="left-link">
                   <p>For a more detailed analysis of the differences between ALfA, TaRL and Structured Pedagogy.</p>
-                  <div class="text-center"><a href="https://drive.google.com/file/d/1zML8Gdiaj_GxF9mdR19H5TPgfdwx1row/view" target="_blank" class="global-btn-one">Click Here</a></div>
+                  <div class="text-center"><a
+                      href="https://drive.google.com/file/d/1zML8Gdiaj_GxF9mdR19H5TPgfdwx1row/view" target="_blank"
+                      class="global-btn-one">Click Here</a></div>
                 </div>
                 <!-- <div class="right-link">
                   <p>For reading a chapter from HGSE on ALfA in UP.</p>
@@ -254,7 +256,8 @@
                 <li style="background: #d2d3d5;"><strong>Source:</strong> Copenhagen Consensus, 2023. Halftime to SDGs
                   Best Investment Paper: Education</li>
                 <li style="background: #00a859; color: #fff;"><strong>Source:</strong> Weighted average from
-                  implementations. $4 per child, effect size of 0.48 (see <a href="pdf/REBUILDING-Book-Chapter-8.pdf" target="_blank" style="color: inherit;text-decoration: underline;">HGSE</a> for more details).</li>
+                  implementations. $4 per child, effect size of 0.48 (see <a href="pdf/REBUILDING-Book-Chapter-8.pdf"
+                    target="_blank" style="color: inherit;text-decoration: underline;">HGSE</a> for more details).</li>
               </ul>
             </div>
           </div>
@@ -336,7 +339,7 @@
               </ul>
             </div>
             <div class="selection-grid">
-              <div class="selection-grid-item" style="--dclr:#ed3237;">
+              <div class="selection-grid-item s1" style="--dclr:#ed3237;">
                 <span class="series">1</span>
                 <div class="selection-wrapper">
                   <div class="icon">
@@ -345,11 +348,28 @@
                   </div>
                   <div class="descrption">
                     <h4>School Selection</h4>
-                    <p>Random selection and assignment of treatment and control schools.</p>
+                    <p>Random selection and assignment of treatment and control schools. <span class="read-more trigger" data-modal="modal1">read more</span></p>
                   </div>
                 </div>
               </div>
-              <div class="selection-grid-item" style="--dclr:#f58634;">
+              <div id="modal1" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">School Selection</h4>
+                  <div class="content-para">
+                    <p>The selection of schools is the foundation of any research implementation. This stage aims to ensure a randomized, unbiased, and scientifically valid sampling process. Make sure to transparently documenting the selection methodology.</p>
+                    <ol>
+                      <li><strong>Compile List:</strong> Choose a geographic area based on practical constraints (e.g., districts or blocks). Compile a list of schools within the defined area using government or district-level records.</li>
+                      <li><strong>Apply Exclusion criteria:</strong> Exclude schools that may not align with research requirements (e.g., schools with fewer than 50 students).</li>
+                      <li><strong>Random Sampling:</strong> Use software tools like Excel to randomly select the appropriate number of schools (we suggest 8) from the eligible list.</li>
+                      <li><strong>Random allocation:</strong> Use above software to randomly divide selected schools into two equal groups. The treatment group will implement the ALfA pedagogy, while the control group will continue with traditional teaching methods for comparative analysis.</li>
+                      <li><strong>Clear Communication:</strong> The relevant government official should issue a letter describing the RRI and welcoming the schools, including clear description of the expectations from teachers and principals to spend the required time on ALfA.</li>
+
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s2" style="--dclr:#f58634;">
                 <span class="series">2</span>
                 <div class="selection-wrapper">
                   <div class="icon">
@@ -357,11 +377,28 @@
                   </div>
                   <div class="descrption">
                     <h4>Baseline Assessments</h4>
-                    <p>Third-party-validated tests to measure initial skill levels.</p>
+                    <p>Third party tests for a random sample of students, to measure initial levels. <span class="read-more trigger" data-modal="modal2">read more</span></p>
                   </div>
                 </div>
               </div>
-              <div class="selection-grid-item" style="--dclr:#87CEEB;">
+              <div id="modal2" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Baseline Assessment</h4>
+                  <div class="content-para">
+                    <p>Baseline assessments measure the starting point of students' foundational skills in literacy and numeracy. These assessments are critical for benchmarking and later comparing results post-implementation.</p>
+                    <ol>
+                      <li><strong>Assessment Design.</strong> DEVI has a standardised international assessment for literacy and numeracy. If needed, we can collaborate to translate this to the local language.</li>
+                      <li><strong>Student Selection.</strong> Select a random sample of students (depending on the total number of students, we suggest 30%) in order to retain sufficient statistical power while reducing the logistical effort and expense.</li>
+                      <li><strong>Format.</strong> Use a paper-based format with OMR (Optical Mark Recognition) sheets for efficient data scanning and analysis. Alternately, if sufficient devices are available, use the custom-designed online assessment tool (which has identical question items to the paper-based format).</li>
+                      <li><strong>Third Party Involvement.</strong> Where possible, engage an external party to conduct the assessment. We have found that college students, with a little training, can conduct the assessments reliably.</li>
+                      <li><strong>Conducting the test.</strong> Ensure children are familiar with marking answers (e.g., ticking or shading the option in an OMR sheet, or clicking a button in an app). Conduct tests in a controlled environment with no intervention from school staff, especially class teachers. Ensure strict adherence to standardized procedures to maintain data authenticity. If OMR sheets are used, a random sample of test papers should be cross-checked to ensure data quality.</li>
+
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s3" style="--dclr:#87CEEB;">
                 <span class="series">3</span>
                 <div class="selection-wrapper">
                   <div class="icon">
@@ -369,11 +406,29 @@
                   </div>
                   <div class="descrption">
                     <h4>Teacher Training</h4>
-                    <p>Online or in-person, covering ALfA pedagogy and classroom triggers.</p>
+                    <p>Online or in-person, covering ALfA pedagogy and classroom triggers. <span class="read-more trigger" data-modal="modal3">read more</span></p>
                   </div>
                 </div>
               </div>
-              <div class="selection-grid-item" style="--dclr:#09ab5f;">
+              <div id="modal3" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Teacher Training</h4>
+                  <div class="content-para">
+                    <p>Teacher training is crucial to the success of ALfA implementation. It ensures that educators are equipped with the skills and confidence to adopt the pedagogy effectively.</p>
+                    <ol>
+                      <li><strong>Modality:</strong> Online training remains effective when well-structured and highly interactive, and can reduce costs and logistical challenges. Training can be conducted online in English or Hindi by the DEVI team.  Alternately, we can train a master-trainer from the implementing partner, who can then conduct in-person training (which may be in the local language).</li>
+                      <li><strong>Format:</strong> The training will be highly interactive, with videos of classroom implementation and hands-on activities that build teacher’s confidence in peer-based and interactive learning methodologies.</li>
+                      <li><strong>Building Stakeholder Buy-in:</strong> Along with equipping teachers with knowledge and skills of the ALfA pedagogy, a key goal is to build enthusiasm for ALfA by highlighting success stories from other regions. The training also explores how ALfA reduces teacher workload.</li>
+                      <li><strong>Duration:</strong> We suggest two three-hour sessions, one for literacy, one for numeracy. </li>
+                      <li>Materials: Trainees need to bring materials to use as counters for hands-on numeracy activities, such as beans, buttons, sticks, leaves.</li>
+                      <li><strong>Quiz & Certificates:</strong> The training will conclude with a fun quiz on the ALfA methodology, and participants will be given certificates.</li>
+
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s4" style="--dclr:#09ab5f;">
                 <span class="series">4</span>
                 <div class="selection-wrapper">
                   <div class="icon">
@@ -381,35 +436,255 @@
                         title="School Selection"></span>
                   </div>
                   <div class="descrption">
-                    <h4>Implementation</h4>
-                    <p>Structured daily lessons in foundational literacy and numeracy.</p>
+                    <h4>Learning Materials</h4>
+                    <p>DEVI provides soft copies & up to 250 hard copies of ALfA toolkits for free. <span class="read-more trigger" data-modal="modal4">read more</span></p>
                   </div>
                 </div>
               </div>
-              <div class="selection-grid-item" style="--dclr:#3e4095;">
+              <div id="modal4" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Learning Materials</h4>
+                  <div class="content-para">
+                    DEVI will provide all soft copies of learning materials, including teacher handbooks, student materials, assessments and apps, for free. If hard copies are required, DEVI can provide up to 250 toolkits (sufficient for 500 students) for free in any of the major languages (English, Arabic, Spanish, French, Portugese, Urdu, Hindi). The implementation partner will have to bear shipping and distribution costs.
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s5" style="--dclr:#3e4095;">
                 <span class="series">5</span>
                 <div class="selection-wrapper">
                   <div class="icon">
                     <span><img src="images/endline-01.png" alt="School Selection" title="School Selection"></span>
                   </div>
                   <div class="descrption">
-                    <h4>Endline Assessments</h4>
-                    <p>Measure progress using post-tests and real-time analytics via Pragati app.</p>
+                    <h4>Daily ALfA lessons</h4>
+                    <p>Structured learning process for foundational literacy and numeracy. <span class="read-more trigger" data-modal="modal5">read more</span></p>
                   </div>
                 </div>
               </div>
-              <div class="selection-grid-item" style="--dclr:#ec268f;">
+              <div id="modal5" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Daily ALfA Lessons</h4>
+                  <div class="content-para">
+                    <p>ALfA fosters a shift from teacher-centric to student-led learning.</p>
+                    <p class="mb-3"><strong>Preparation (start of the day)</strong></p>
+                    <ul>
+                      <li>Teachers use a fun method to pair students randomly (e.g., pulling names from chits or jars).</li> 
+                      <li>Students make or bring their learning materials, including Tina & Toto puppets and maths counters.</li>
+                      <li>Teachers plan the day's activity sequence.</li>
+                    </ul>
+                    <p class="mb-3"><strong>Four Steps of an ALfA Lesson:</strong></p>
+                    <ol>
+                      <li><strong>Teacher-Child Demonstration.</strong> Teachers model the activity (e.g., clapping out syllables, forming numbers with materials) in a pair along with a child, engaging the class through visual and verbal cues.</li>
+                      <li><strong>Peer Demonstration.</strong> Two randomly students demonstrate the activity to their peers.</li>
+                      <li><strong>Pair Work.</strong> The whole class does the activity in pairs. Both students take turns as “asker” and “responder” to reinforce mutual learning.</li>
+                      <li><strong>New Questions.</strong> Students create questions or tasks for their partner, moving toward independent problem-solving.</li>
+                    </ol>
+                    <p class="mb-3"><strong>At the End of a Unit</strong></p>
+                    <p>Teachers conduct collective feedback by asking a series of multiple-choice questions, to see what proportion of students have gained the required skills. They then engage in gap-filling by re-pairing students so that children who have acquired the competency can help those who have not yet.</p>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s6" style="--dclr:#ec268f;">
                 <span class="series">6</span>
                 <div class="selection-wrapper">
                   <div class="icon">
                     <span><img src="images/model-01.png" alt="School Selection" title="School Selection"></span>
                   </div>
                   <div class="descrption">
-                    <h4>Model Schools</h4>
-                    <p>Establish ALfA Model Schools as hubs for observation and inspiration.</p>
+                    <h4>Diversity in the Classroom</h4>
+                    <p>ALfA includes all students in the learning process, regardless of ability level. <span class="read-more trigger" data-modal="modal6">read more</span></p>
                   </div>
                 </div>
               </div>
+              <div id="modal6" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Diversity in the Classroom</h4>
+                  <div class="content-para">
+                    <p>ALfA methodologies are designed to accommodate classrooms with diverse student abilities, ensuring inclusivity and equal learning opportunities. It uses the power of paired learning to transform the challenge of multi-level classrooms into a strength.</p>
+                    <ol>
+                      <li><strong>New Random Pairs</strong> are made daily to foster social skills and enable children to learn from different partners.</li>
+                      <li>The modules provide <strong>tiered activities</strong> within to cater to different learning levels.</li>
+                      <li>Children <strong>make their own questions</strong>, which enables them to interact at the level appropriate for them.</li>
+                      <li><strong>Children with learning disabilities</strong> are warmly included in the ALfA learning process, with different peers helping them learn (and learning from them).</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s7" style="--dclr:#07BEB8;">
+                <span class="series">7</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/supportive-01.png" alt="School Selection"
+                        title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Supportive Supervision</h4>
+                    <p>Regular school visits, with teachers meeting each other for peer encouragement. <span class="read-more trigger" data-modal="modal7">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal7" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Supportive Supervision</h4>
+                  <div class="content-para">
+                    <p>Supervision ensures fidelity in implementing ALfA methodologies and provides actionable feedback to improve the program's effectiveness. Rather than relying on carrots and sticks, monitoring processes should enhance teachers’ intrinsic motivation.</p>
+                    <ol>
+                      <li><strong>Training.</strong> DEVI will conduct a separate short training for middle-level leaders on what indicators to look for in an ALfA classroom.</li> 
+                      <li><strong>Regular visits.</strong> Middle-level leaders should visit schools regularly to monitor classroom practices. Ensure observations cover multiple classes and activities, not just a single classroom.</li>
+                      <li><strong>Supervisory App.</strong> DEVI will provide access to a supportive supervision app, ALfAWay, consisting of a standardized checklist (which is also shared with teachers for self-monitoring). The ALfAWay app also generates reports which are accessible for district and state officials.</li>
+                      <li><strong>Grow Circles.</strong> Teachers implementing ALfA will be encouraged to meet weekly to share their experiences with each other for mutual encouragement and inspiration. The grow circles will be used to share successes, troubleshoot challenges and practice upcoming lessons & activities.</li>
+                      <li><strong>Mentorship and Peer Learning:</strong> Experienced teachers or trained supervisors will be assigned as mentors for new teachers. This buddy system will enable teachers to support each other, especially during the initial implementation phase.</li>
+                      <li><strong>Recognition & Honouring.</strong> Successes will be celebrated with ceremonies or public acknowledgment during district reviews.</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s8" style="--dclr:#942911;">
+                <span class="series">8</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/technology-01.png" alt="School Selection" title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Role of Technology</h4>
+                    <p>Teachers connect with each other on WhatsApp groups for encouragement & support. <span class="read-more trigger" data-modal="modal8">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal8" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Role of Technology</h4>
+                  <div class="content-para">
+                    <p>Technology plays a pivotal role in training, monitoring, and scaling the ALfA program.</p>
+                    <ol>
+                      <li><strong>Video Tutorials</strong> are available on YouTube, covering key ALfA principles and showing hands-on activities.</li>
+                      <li><strong>WhatsApp Groups</strong> will be formed for all the teachers in the treatment group, in order to facilitate teacher collaboration and sharing of best practices. Teachers will be encouraged to regularly post photos, videos and any queries. Supervisors and higher officials will be present in the group, and a designated officer will regularly post ALfA Maxims (ready-made best practices). Constructive feedback can be offered via personal messages rather than in public groups.</li>
+                      <li><strong>ALfA App</strong> is a centralized platform for supervisors to log observations and generate reports. It also provides teachers access to materials, instructions, and progress tracking tools.</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s9" style="--dclr:#2B193D;">
+                <span class="series">9</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/r-training-01.png" alt="School Selection" title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Refresher trainings</h4>
+                    <p>A midline training helps teachers adapt to challenges and learn from each other. <span class="read-more trigger" data-modal="modal9">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal9" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Refresher Trainings</h4>
+                  <div class="content-para">
+                    <p>Refresher trainings ensure that teachers and supervisors remain aligned with ALfA methodologies and adapt to emerging challenges.</p>
+                    <ol>
+                      <li><strong>Frequency.</strong> We recommend one refresher training/feedback session after the first 2-3 weeks of implementation.</li>
+                      <li><strong>Content.</strong> The training will revisit key ALfA principles, such as random pairing and collective feedback; and discuss common classroom challenges and their solutions. It will also provide a chance for teachers to share their feedback and brainstorm ways to further improve the program.</li>
+                      <li><strong>Modality.</strong> The training can be online to ensure accessibility and minimize cost. If all implementation schools are located near each other, in person refreshers can also be used.</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s10" style="--dclr:#BC96E6;">
+                <span class="series">10</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/p-engage-01.png" alt="School Selection"
+                        title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Parent Engagement</h4>
+                    <p>Town halls or open days help introduce parents to ALfA methods. <span class="read-more trigger" data-modal="modal10">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal10" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Parent Engagement</h4>
+                  <div class="content-para">
+                    <p>Parents and communities play a crucial role in reinforcing ALfA principles at home and ensuring broader support for the program.</p>
+                    <ol>
+                      <li><strong>Town Halls.</strong> School town halls or open days can be conducted to:
+                      <ul>
+                        <li>Introduce parents to ALfA’s methods.</li>
+                        <li>Demonstrate simple activities (e.g., using puppets or random pairing) they can replicate at home.</li>
+                        <li>Emphasize the benefits of peer learning for social and academic development.</li>
+                      </ul>
+                      </li>
+                      <li><strong>Activities for Parents.</strong> Teachers should strive to involve parents in the learning process:
+                      <ul>
+                        <li>Encourage parents to use Tina & Toto puppets for storytelling or Q&A at home.</li>
+                        <li>Promote family reading time where children read aloud to siblings or grandparents.</li>
+                        <li>First-generation students can be encouraged to teach their parents at home.</li>
+                      </ul></li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s11" style="--dclr:#D8315B;">
+                <span class="series">11</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/endline-02.png" alt="School Selection" title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Endline Assessments</h4>
+                    <p>Measure progress with a paper that is equivalent but not identical to the baseline. <span class="read-more trigger" data-modal="modal11">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal11" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Endline Assessments</h4>
+                  <div class="content-para">
+                    <p>Endline assessments provide critical insights into student progress and program effectiveness.</p>
+                    <ol>
+                      <li><strong>Assessment Content:</strong> The endline test is an identical format (though different question items) as the baseline, ensuring data consistency and comparability.</li>
+                      <li><strong>Random Sampling:</strong> As with the baseline test, a random sample of students (e.g. 30% of the total) will be selected. These need not be the same students as those who sat the baseline.</li>
+                      <li><strong>Standardised Conditions:</strong> Maintain the same test-taking conditions across different schools as was used in the baseline test.</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              <div class="selection-grid-item s12" style="--dclr:#0E9594;">
+                <span class="series">12</span>
+                <div class="selection-wrapper">
+                  <div class="icon">
+                    <span><img src="images/analysis-01.png" alt="School Selection" title="School Selection"></span>
+                  </div>
+                  <div class="descrption">
+                    <h4>Analysis & Reporting</h4>
+                    <p>Measuring students' progress from baseline to endline and sharing with stakeholders. <span class="read-more trigger" data-modal="modal12">read more</span></p>
+                  </div>
+                </div>
+              </div>
+              <div id="modal12" class="modal">
+                <div class="rapid-modal-content">
+                  <h4 class="heading-tertiary">Analysis & Reporting</h4>
+                  <div class="content-para">
+                    <p>At the end of the engage phase, detailed reporting ensures transparency and provides a roadmap for future scaling in the expand phase</p>
+                    <ol>
+                      <li>Dignity Education will prepare <strong>comprehensive reports</strong> in collaboration with the implementation partner. The reports will analyse student performance data from baseline to endline, as well as sharing supervisor observations, teacher feedback and case studies.</li>
+                      <li><strong>Sharing Results.</strong> The findings will be presented to all stakeholders through district or state-level review meetings, reports shared with donors or CSR partners, and community events highlighting student and teacher achievements.</li>
+                    </ol>
+                  </div>
+                </div>
+                <span class="close-btn"><img src="images/close-me.png" alt=""></span>
+              </div>
+              
+          <div class="overlay"></div>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-expand" role="tabpanel" aria-labelledby="pills-expand-tab" tabindex="0">
@@ -468,7 +743,8 @@
             </div>
             <div class="space-one"></div>
             <div class="text-center">
-              <a href="https://drive.google.com/file/d/1I2WYX85EiJJqR5NdGcbUjA-u79i5RUMO/view?usp=drive_link" target="_blank" class="global-btn-one" title="for a more detailed roadmap for RRI implementation ">More
+              <a href="https://drive.google.com/file/d/1I2WYX85EiJJqR5NdGcbUjA-u79i5RUMO/view?usp=drive_link"
+                target="_blank" class="global-btn-one" title="for a more detailed roadmap for RRI implementation ">More
                 Detail</a>
             </div>
           </div>
@@ -504,26 +780,27 @@
               <span class="flag">
                 <img src="images/ghana-01.png" alt="">
               </span>
-              <span class="symbol">
+              <span class="symbol" style="width: 7rem;">
                 <img src="images/ghana-symbol-01.png" alt="">
               </span>
               <div class="graph">
                 <img src="images/ghana-graph-01.png" alt="" class="img-fluid">
               </div>
-              <h3 class="heading-five">GHANA<span>Olinga Foundation / Associates for Change</span></h3>
+              <h3 class="heading-five">Ghana<span>Olinga Foundation / Associates for Change</span></h3>
               <div class="studies-content">
                 <p>Implementation in 6 schools with 2 as control. 30 days later, in the midline test, the proportion of
                   Grade 4 & 5 students reading at the highest level <strong>almost doubled from 22% to 41%.</strong></p>
               </div>
               <div class="text-center mt-5">
-                <a href="https://docs.google.com/presentation/d/1vtX5PtYUfv-l5zl8mL6MLVK64Q-JNOb1/edit?usp=drive_link&ouid=107510198915558403928&rtpof=true&sd=true" target="_blank" class="global-btn-two">Explore More</a>
+                <a href="https://docs.google.com/presentation/d/1vtX5PtYUfv-l5zl8mL6MLVK64Q-JNOb1/edit?usp=drive_link&ouid=107510198915558403928&rtpof=true&sd=true"
+                  target="_blank" class="global-btn-two">Explore More</a>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="studies-wrapper">
               <span class="flag">
-                <img src="images/india-01.png" alt="">
+                <img src="images/uttar-01.jpg" alt="">
               </span>
               <span class="symbol">
                 <img src="images/india-symbol-01.png" alt="">
@@ -531,14 +808,13 @@
               <div class="graph">
                 <img src="images/india-graph-01.png" alt="" class="img-fluid">
               </div>
-              <h3 class="heading-five">INDIA<span>Various District & State Governments</span></h3>
+              <h3 class="heading-five">Uttar Pradesh<span>State & District Governments</span></h3>
               <div class="studies-content">
-                <p>Implementation in stages across <strong>17,000 schools</strong> in 4 states. In UP, India's most
-                  populous state, schools and districts implementing ALfA performed 2-3x better on the government's
-                  NIPUN Assessment Test, which measures FLN competencies.</p>
+                <p>In Uttar Pradesh, India's most populous state, schools and districts implementing ALfA performed <strong>2-3x better</strong> on the government's NIPUN Assessment Test, which measures FLN competencies.</p>
               </div>
               <div class="text-center mt-5">
-                <a href="https://dignityeducation.org/links/images/Make%20UP%20NIPUN%20in%202024.pdf" target="_blank" class="global-btn-two">Explore More</a>
+                <a href="https://dignityeducation.org/links/images/Make%20UP%20NIPUN%20in%202024.pdf" target="_blank"
+                  class="global-btn-two">Explore More</a>
               </div>
             </div>
           </div>
@@ -553,13 +829,119 @@
               <div class="graph">
                 <img src="images/maldives-graph-01.png" alt="" class="img-fluid">
               </div>
-              <h3 class="heading-five">MALDIVES<span>Ministry of Education, UNICEF</span></h3>
+              <h3 class="heading-five">Maldives<span>Ministry of Education, UNICEF</span></h3>
               <div class="studies-content">
                 <p>Test scores in ALfA schools improved 7 percentage points in English and 11 percentage points in Maths
                   – nearly <strong>double the rate</strong> of improvement compared to reference group schools. </p>
               </div>
               <div class="text-center mt-5">
-                <a href="https://docs.google.com/presentation/d/1T6tkTlvx3pehLVuN74B38pW4xT9HUAbl/edit?usp=drive_link&ouid=107510198915558403928&rtpof=true&sd=true" target="_blank" class="global-btn-two">Explore More</a>
+                <a href="https://docs.google.com/presentation/d/1T6tkTlvx3pehLVuN74B38pW4xT9HUAbl/edit?usp=drive_link&ouid=107510198915558403928&rtpof=true&sd=true"
+                  target="_blank" class="global-btn-two">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="studies-wrapper">
+              <span class="flag">
+                <img src="images/peru-symbol-01.jpg" alt="">
+              </span>
+              <span class="symbol">
+                <img src="images/peru-01.jpg" alt="">
+              </span>
+              <div class="graph">
+                <img src="images/peru-graph-01.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="heading-five">Peru<span>Arca Beta NGO</span></h3>
+              <div class="studies-content">
+                <p>ALfA is being piloted in several schools in the remote Amazon, with impressive results. Discussions are now underway with government for scaling up.</p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="https://www.youtube.com/watch?v=2atv1Qd1Uxo"
+                  target="_blank" class="global-btn-two">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="studies-wrapper">
+              <span class="flag">
+                <img src="images/usa.jpg" alt="">
+              </span>
+              <span class="symbol">
+                <img src="images/usa-symbol-01.jpg" alt="">
+              </span>
+              <div class="graph">
+                <img src="images/usa-graph-01.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="heading-five">USA<span>Literacy Chicago</span></h3>
+              <div class="studies-content">
+                <p>ALfA is helping disadvantaged adults learn to read in a swift and joyful process. Volunteers and learners alike are loving the new approach to literacy.</p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="https://www.youtube.com/watch?v=PhBnZjPnBDI"
+                  target="_blank" class="global-btn-two">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="studies-wrapper">
+              <span class="flag">
+                <img src="images/kenya.jpg" alt="">
+              </span>
+              <span class="symbol">
+                <img src="images/kenya-symbol-01.jpg" alt="">
+              </span>
+              <div class="graph">
+                <img src="images/kenya-graph.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="heading-five">Kenya<span>Path Youth NGO</span></h3>
+              <div class="studies-content">
+                <p>Our partners used the ALfA materials to run a literacy & numeracy bootcamp for children from the slums of Mombassa.</p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="https://dignityeducation.org/EndorsementLetter.pdf"
+                  target="_blank" class="global-btn-two">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="studies-wrapper">
+              <span class="flag">
+                <img src="images/hp-symbol-01.png" alt="">
+              </span>
+              <span class="symbol">
+                <img src="images/hp-01.jpg" alt="">
+              </span>
+              <div class="graph">
+                <img src="images/hp-graph.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="heading-five">Himachal Pradesh<span>State Government</span></h3>
+              <div class="studies-content">
+                <p>Himachal Pradesh has signed an agreement for state-wide ALfA implementation. We began in two districts, Solan and Shimla, with impressive results.</p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="https://dignityeducation.org/links/images/Making%20Himachal%20NIPUN%20in%202024.pdf"
+                  target="_blank" class="global-btn-two">Explore More</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="studies-wrapper">
+              <span class="flag">
+                <img src="images/rajasthan.jpg" alt="">
+              </span>
+              <span class="symbol">
+                <img src="images/rajasthan-symbol-01.jpg" alt="">
+              </span>
+              <div class="graph">
+                <img src="images/rajasthan-graph-01.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="heading-five">Rajasthan<span>IIMPACT Foundation</span></h3>
+              <div class="studies-content">
+                <p>The ALfA materials are being used in a mother literacy program Rajasthan, as well as West Bengal, UP, Uttarkhand and Haryana. Learners test scores more than tripled from baseline to endline.</p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="https://dignityeducation.org/links/images/Empowering-Women-and-Girls-Report.pdf"
+                  target="_blank" class="global-btn-two">Explore More</a>
               </div>
             </div>
           </div>
@@ -586,30 +968,31 @@
       <div class="container">
         <h2 class="heading-primary">Connection to <span>Global Learning Lab</span> (GLL) 2026</h2>
         <div class="space-one"></div>
-        <div class="content-para">
-          <p>RRI serves as a precursor to the Global Learning Lab (GLL) 2025, focused on "Fast-Forward FLN: From Global
-            Research to Systemic Transformation," scheduled for October 23-25, 2025, in Lucknow, India. The GLL will
-            convene global stakeholders (policymakers, researchers, international organizations, funding agencies,
-            practitioners, and NGOs) to address foundational learning gaps.</p>
-          <p>As part of this initiative, countries and regions are invited to implement the 45-day Research
-            Implementations in advance of the GLL, and come prepared to share their findings on the efficacy,
-            scalability, and adaptability of the ALfA pedagogy, and pathways for its integration in national frameworks
-            at the GLL. </p>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="content-para">
+              <p>RRI serves as a precursor to the Global Learning Lab (GLL) 2025, focused on "Fast-Forward FLN: From Global
+                Research to Systemic Transformation," scheduled for October 23-25, 2025, in Lucknow, India. The GLL will
+                convene global stakeholders (policymakers, researchers, international organizations, funding agencies,
+                practitioners, and NGOs) to address foundational learning gaps.</p>
+              <p>As part of this initiative, countries and regions are invited to implement the 45-day Research
+                Implementations in advance of the GLL, and come prepared to share their findings on the efficacy,
+                scalability, and adaptability of the ALfA pedagogy, and pathways for its integration in national frameworks
+                at the GLL. </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="gallery">
+              <figure>
+                <img src="images/gll-01.jpg" alt="" class="img-fluid">
+                <figcaption>Panel Discussion at Chief Justice Conference, Lucknow 2024</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
         <div class="text-center mt-5">
-            <a href="https://dignityeducation.org/lab" target="_blank" class="global-btn-one" title="for more info & registering for the Global Learning Lab">More Info</a>
-        </div>
-        <div class="space-one"></div>
-        <div class="row gallery">
-          <div class="col-md-4">
-            <div class="img-wrapper"><img src="images/gll-01.jpg" alt="" class="img-fluid"></div>
-          </div>
-          <div class="col-md-4">
-            <div class="img-wrapper"><img src="images/gll-02.jpg" alt="" class="img-fluid"></div>
-          </div>
-          <div class="col-md-4">
-            <div class="img-wrapper"><img src="images/gll-03.jpg" alt="" class="img-fluid"></div>
-          </div>
+          <a href="https://dignityeducation.org/lab" target="_blank" class="global-btn-one"
+            title="for more info & registering for the Global Learning Lab">More Info</a>
         </div>
       </div>
     </section>
@@ -618,7 +1001,7 @@
         <h2 class="heading-primary">Learn <span>More</span></h2>
         <div class="space-one"></div>
         <div class="blog-items">
-        <div class="row">
+          <div class="row">
             <div class="col-md-6 equal-height" style="height: 300px;">
               <div class="item">
                 <div class="thumb col-md-6" style="background-image: url(images/learn-01.png);">
@@ -628,7 +1011,10 @@
                   <p>
                     Read <strong>Dr Gandhi's first book,</strong> Disruptive Literacy (Bloomsbury, 2022)
                   </p>
-                  <a href="https://www.bloomsbury.com/in/disruptive-literacy-9789390513659/" target="_blank">Read More <i class="fas fa-external-link-alt"></i></a>
+                  <a href="pdf/Disruptive-Literacy-Book-01.pdf"
+                    target="_blank">Read Extract<i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://www.bloomsbury.com/in/disruptive-literacy-9789390513659/"
+                    target="_blank">Visit Publisher<i class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -641,7 +1027,10 @@
                   <p>
                     Read <strong>Dr Gandhi's latest book,</strong> Accelerating Learning for All. (Bloomsbury, 2024)
                   </p>
-                  <a href="https://www.bloomsbury.com/in/accelerating-learning--for-all-9789356409828/" target="_blank">Read More <i class="fas fa-external-link-alt"></i></a>
+                  <a href="pdf/ALfA-book-extract.pdf"
+                    target="_blank">Read Extract <i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://www.bloomsbury.com/in/accelerating-learning--for-all-9789356409828/"
+                    target="_blank">Visit Publisher <i class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -654,7 +1043,8 @@
                   <p>
                     Hear endorsements by high-level <strong>Indian policymakers</strong>.
                   </p>
-                  <a href="https://www.youtube.com/embed/SCdGBalv7Ww" target="_blank">Watch Now <i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://www.youtube.com/embed/SCdGBalv7Ww" target="_blank">Watch Now <i
+                      class="fas fa-external-link-alt"></i></a>
                 </div>
               </div>
             </div>
@@ -665,9 +1055,273 @@
                 </div>
                 <div class="info col-md-6">
                   <p>
-                    Check out the <strong>ALfA materials,</strong> available in 30+ Indian and International languages. 
+                    Check out the <strong>ALfA materials,</strong> available in 30+ Indian and International languages.
                   </p>
-                  <a href="https://www.dignityeducation.org/toolkits" target="_blank">Explore Toolkits <i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://www.dignityeducation.org/toolkits" target="_blank">Explore Toolkits <i
+                      class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="frequently-ques mr-top">
+      <div class="container">
+        <h2 class="heading-primary">Frequently Asked<span> Questions</span></h2>
+        <div class="space-one"></div>
+        <div class="accordion" id="frequentlyAskquestion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#quesone"
+                aria-expanded="false" aria-controls="quesone">
+                Why should anyone take a risk on a new methodology like ALfA?
+              </button>
+            </h2>
+            <div id="quesone" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>While ALfA is a new program, having been launched in government school contexts in 2022, it
+                      is based on over a decade of active educational research in Lucknow’s slums and private schools.
+                      ALfA is now well established, having been implemented in thousands of schools in India, and with
+                      pilots across <a href="https://dignityeducation.org/our-projects" target="_blank"
+                        class="internal-link">12 countries</a>. ALfA is discussed at length in two books published by
+                      Bloomsbury and <a
+                        href="https://dignityeducation.org/hidden/HGSE Book Chapter 8 (ALfA FLN in Uttar Pradesh).pdf"
+                        target="_blank" class="internal-link">two chapters</a> of a book edited by Harvard Graduate
+                      School of Education Professor Fernando Reimers.</p>
+                  <p>But perhaps the most important reason to try something new is this: the old systems are not
+                    working. <a
+                      href="https://www.worldbank.org/en/news/press-release/2022/06/23/70-of-10-year-olds-now-in-learning-poverty-unable-to-read-and-understand-a-simple-text"
+                      target="_blank" class="internal-link">70% of 10-year-olds</a> in low-and-middle-income countries
+                    around the world cannot read a simple text with understanding. Something must change!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questwo" aria-expanded="false" aria-controls="questwo">
+                How can we afford to give 45 days to a program like ALfA, when we are already so busy and behind the
+                curriculum?
+              </button>
+            </h2>
+            <div id="questwo" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>
+                    We understand that many teachers are already overburdened, and have a big workload. However, we
+                    firmly believe that ‘completing the curriculum’ is a secondary goal, the primary focus should be on
+                    students’ learning outcomes. <a href="https://youtu.be/xhJxESW_cXI?si=AVxbUfvnKSYdJZ4y"
+                      target="_blank" class="internal-link">Experiences in Uttar Pradesh</a>, India’s most populous
+                    state, indicate that when students complete the 45-day ALfA program their improved reading skills
+                    enable them to work through their textbooks much more swiftly and effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questhree" aria-expanded="false" aria-controls="questhree">
+                We are already doing peer learning/ activity-based learning/ playway method. How is ALfA any different?
+              </button>
+            </h2>
+            <div id="questhree" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>Though ALfA is a new pedagogy, it contains many elements which are well established – from peer
+                    learning to hands-on activities. ALfA is like a recipe that brings together these ingredients in a
+                    new and unique way, to make a flavourful dish:</p>
+                  <ul class="primary-list">
+                    <li>Paired learning throughout the day, rather than occasionally</li>
+                    <li>Pairs are made randomly, rather than based on ability level</li>
+                    <li>Modules are simple and visual, enabling children to learn themselves, rather than relying on a
+                      teacher to interpret</li>
+                    <li>Children make new questions for each other, rather than simply solving from worksheets</li>
+                  </ul>
+                  <p>None of these aspects is not unique, but they are combined in a unique way in ALfA.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#quesfour" aria-expanded="false" aria-controls="quesfour">
+                How is ALfA different from Structured Pedagogy?
+              </button>
+            </h2>
+            <div id="quesfour" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>Structured pedagogy is defined as a ‘coherent package of textbooks, lesson plans, and teacher
+                    training and coaching that work together to improve in-class teaching’ (<a
+                      href="https://copenhagenconsensus.com/publication/halftime-sdgs-education" target="_blank"
+                      class="internal-link">Copenhagen Consensus</a>, 2023). Structured pedagogy is an increasingly
+                    popular approach, recognized by the <a
+                      href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099420106132331608/idu1977f73d7122b1147771980c1c5a14598eef8"
+                      target="_blank" class="internal-link">World Bank Global Education Evidence Advisory Panel</a> as a
+                    ‘Smart Buy’.</p>
+                  <p>ALfA is a coherent package of learning materials, assessments, apps, teacher training & guides –
+                    making it, in some regards, a form of structured pedagogy. However, it is different from some
+                    structured pedagogies which provide a highly detailed and rigid mapping of what teachers need to do
+                    every period of every week of every year. Instead, ALfA’s process-led structure gives significant
+                    flexibility and freedom to both teachers and students to work at their own pace and style.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#quesfive" aria-expanded="false" aria-controls="quesfive">
+                How is ALfA different from Teaching at the Right Level?
+              </button>
+            </h2>
+            <div id="quesfive" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>Many classrooms have huge diversity of learning levels: some children may be at or beyond their
+                    age-appropriate level, while others lag far behind. This can be a big challenge for teachers, who
+                    struggle to decide whether to teach to the top, middle, or bottom of the class.</p>
+                  <p>Teaching at the Right Level (TaRL) is a well-respected FLN program that tackles this problem of
+                    multi-level classes by testing students’ learning levels, grouping them, and targeting instruction
+                    accordingly.</p>
+                  <p>ALfA presents a different solution to the same problem: working together in random pairs, children
+                    help each other learn. This not only proves effective academically, it also helps develop social
+                    skills, as children learn to work with a diversity of classmates. Avoiding labels of ‘strong’ or
+                    ‘weak’ helps all children develop a <a href="https://fs.blog/carol-dweck-mindset/" class="internal-link" target="_blank">growth mindset</a>, striving to excel regardless of their current
+                    learning level.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#quessix" aria-expanded="false" aria-controls="quessix">
+                Our main problem is lack of attendance – we have many children out of school. How will ALfA help in this scenario?
+              </button>
+            </h2>
+            <div id="quessix" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>The <a href="https://asercentre.org/aser-2022/" class="internal-link" target="_blank">Annual Status of Education Report</a> consistently finds high rates (15-30%) of student absenteeism in India, and this is a common problem across many LMICs. However, our experience so far of ALfA in Uttar Pradesh has indicated that, when children are having fun in school and learning is visibly rapid, their <a href="https://youtu.be/xhJxESW_cXI?si=AVxbUfvnKSYdJZ4y" class="internal-link" target="_blank">attendance typically also increases</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#quesseven" aria-expanded="false" aria-controls="quesseven">
+                I have a lot of students, with a huge diversity of learning levels – can ALfA work for me?
+              </button>
+            </h2>
+            <div id="quesseven" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>ALfA can be particularly helpful in challenging contexts such as multi-level classes or areas with a large student: teacher ratio.</p>
+                <ul class="primary-list">
+                  <li><strong>Peer Learning:</strong> Students work together and help each other, such that a diversity of learning levels becomes an opportunity rather than a challenge. Students can even check each other’s work, reducing teacher workload.</li>
+                  <li><strong>Tiered Activities:</strong> ALfA caters to a variety of learning levels within the same module. Students make questions for each other, at the level that is appropriate for them.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#queseight" aria-expanded="false" aria-controls="queseight">
+                ALfA suggests random pairing. But what if two weak students are sitting together – will they be able to help each other? Can young students really do paired learning?
+              </button>
+            </h2>
+            <div id="queseight" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>ALfA refuses to categorise children as 'weak' or 'strong', but it's true that in any classroom there will be a mix of learning levels. Two students who are struggling with reading will still <a href="https://www.amazon.in/s?k=Accelerating+Learning+for+All%bloomsbury&&ref=nb_sb_noss" target="_blank" class="internal-link">decipher more together</a> than they would have individually – two heads are better than one. If two children working together both don't understand what they're doing, they can ask another pair for help. With new random pairings every day, children will soon get a chance to work with others. Very soon, though, even the so-called ‘weakest’ students will learn the process and be able to start asking questions. We’ve seen students as young as <a href="https://www.youtube.com/watch?v=KcO4DqF9eY4" target="_blank" class="internal-link">four-year-olds</a> beautifully ask questions and help each other.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#quesnine" aria-expanded="false" aria-controls="quesnine">
+                What if children speak their local dialect and can't recognise the pictures in the ALfA book?
+              </button>
+            </h2>
+            <div id="quesnine" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>ALfA is currently available in 30 Indian and international languages. We encourage focusing on mother tongue literacy in early years. If ALfA is not available in your local language, we would love to collaborate with you to help develop – <a href="https://dignityeducation.org/contact" target="_blank" class="internal-link">reach out to us</a>. When using ALfA in a second language, you may need to help build their vocabulary so they can recognise the pictures, before they are able to learn decoding and blending. For instance, invite the students to make TLMs like picture and letter cards, and play games with them.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questen" aria-expanded="false" aria-controls="questen">
+                Some of my students have already mastered foundational skills. Won’t ALfA be boring for them?
+              </button>
+            </h2>
+            <div id="questen" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+               <div class="content-para">
+                <p>Some students already know how to perform various arithmetic operations and get the correct answer. However, they still gain by doing it through hands-on activities, as they gain deeper insight and understanding. Concepts like ‘carrying’ in addition and ‘borrowing’ in subtraction may have earlier been done mechanistically, but now become more meaningful.</p>
+                  <p>Beyond academics, paired learning in ALfA helps students develop their socio-emotional skills, including collaboration, communication, citizenship and character.
+                  </p>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#queseleven" aria-expanded="false" aria-controls="queseleven">
+                Can ALfA help Children With Special Needs?
+              </button>
+            </h2>
+            <div id="queseleven" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>Some children have special learning needs (hyper, shy, autistic, dyslexic, etc.) and struggle to focus in a traditional classroom. ALfA helps such children to also become <a href="https://www.youtube.com/watch?v=y1GsOX5SvjU&&t=2s" target="_blank" class="internal-link">actively involved</a> in the learning process. They are included in the paired learning process, and an active part of the classroom – rather than being segregated into a ‘special’ class. Their presence can help other students develop their collaboration and citizenship skills and attitudes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questwelve" aria-expanded="false" aria-controls="questwelve">
+                I like the idea of ALfA, but why is the class so noisy? 
+              </button>
+            </h2>
+            <div id="questwelve" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>ALfA classrooms are often noisy, as children interact with each other in pairs. This clashes with our traditional conception of a 'good class' as one in which students do their individual work silently. As teachers we have to get used to a new normal of accepting 'productive noise'. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questhirteen" aria-expanded="false" aria-controls="questhirteen">
+                I like the idea of ALfA, but the parents are objecting. What can I do? 
+              </button>
+            </h2>
+            <div id="questhirteen" class="accordion-collapse collapse" data-bs-parent="#frequentlyAskquestion">
+              <div class="accordion-body">
+                <div class="content-para">
+                  <p>Parents, who have themselves been brought up in a traditional education system, will sometimes struggle to understand an ALfA classroom. Common objections include 'there's not enough written work' and 'how will they learn if the teacher doesn't explain'? Initially, you may want to do an ‘open day’ or ‘town hall’ to showcase some ALfA activities and get the teachers more interested. Before long, the learning outcomes of students will speak for themselves.</p>
                 </div>
               </div>
             </div>
@@ -684,8 +1338,9 @@
       <div class="footer-grid-item g4"><img src="images/slider/collage/collage-04.jpg" alt=""></div>
       <div class="footer-grid-item g5">
         <div class="footer-content-wrapper">
+          <h6>Boost FLN in 45 Days</h6>
           <h1>Rapid Result Initiative</h1>
-          <h2>Explore. Expand. Embed.</h2>
+          <h2>Dream Boldly. Act Swiftly.</h2>
         </div>
       </div>
       <div class="footer-grid-item g7"><img src="images/slider/collage/collage-05.jpg" alt=""></div>
@@ -735,21 +1390,21 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-            <div class="info">
-                <div class="icon">
-                  <i class="fas fa-headset"></i>
-                </div>
-                <div class="info-link">
-                    <a href="tel:+91-7408406000">+91-740 840 6000</a>
-                </div>
+          <div class="info">
+            <div class="icon">
+              <i class="fas fa-headset"></i>
             </div>
-            <div class="info">
-              <div class="icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info-link">
-                  <a href="mailto:rri@dignityeducation.org">rri@dignityeducation.org</a>
-              </div>
+            <div class="info-link">
+              <a href="tel:+91-7408406000">+91-740 840 6000</a>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-link">
+              <a href="mailto:rri@dignityeducation.org">rri@dignityeducation.org</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -758,7 +1413,8 @@
             <li style="--fclr:#1c86c6;">
               <a target="_blank" href=""><i class="fab fa-linkedin-in"></i></a>
             </li>
-            <li style="--fclr:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);">
+            <li
+              style="--fclr:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);">
               <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
             </li>
             <li style="--fclr:#e96651;">
@@ -769,9 +1425,10 @@
             </li>
           </ul>
         </div>
-    </div>
+      </div>
     </div>
   </div>
+  
   <script src="vendor/js/jquery.js"></script>
   <script src="vendor/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/js/owl.carousel.min.js"></script>

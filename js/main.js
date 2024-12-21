@@ -20,3 +20,16 @@ $('.studies-list').owlCarousel({
         }
     }
 });
+
+$(document).ready(function () {
+    $('.trigger').click(function () {
+      const modalId = $(this).data('modal');
+      $('.overlay').fadeIn();
+      $('#' + modalId).fadeIn();
+    });
+
+    $('.close-btn, .overlay').click(function () {
+      $('.modal').fadeOut();
+      $('.overlay').fadeOut();
+    });
+  });

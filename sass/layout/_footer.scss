@@ -22,7 +22,9 @@
                 mix-blend-mode: luminosity;
                 transition: 0.4s ease;
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
+                aspect-ratio: 1 / 1;
             }
 
             &:hover {
@@ -73,6 +75,8 @@
                     text-transform: uppercase;
                     @include respond (maxWidth768) {
                         font-size: 24px;
+                        margin-bottom: 1rem;
+                        padding-bottom: 0.6rem;
                     }
                     @include respond (minWidth768) {
                         font-size: 30px;
@@ -93,7 +97,20 @@
                     font-weight: 100;
 
                     @include respond (maxWidth575) {
-                        font-size: 28px;
+                        font-size: 26px;
+                        margin-bottom: 0;
+                    }
+                }
+                h6 {
+                    font-size: 24px;
+                    color: $colorWhite;
+                    // font-family: "Antonio", sans-serif;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+
+                    @include respond (maxWidth575) {
+                        font-size: 26px;
+                        margin-bottom: 0;
                     }
                 }
 
